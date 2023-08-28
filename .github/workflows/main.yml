@@ -1,0 +1,8 @@
+- name: Meson Build
+  uses: BSFishy/meson-build@656b2a360964b249ac82905a52018921e01d875b
+  with:
+    action: build
+    directory: build
+    setup-options: -Dbuild-examples=enabled
+    meson-version: 0.50.0
+    ninja-version: 1.11.1
