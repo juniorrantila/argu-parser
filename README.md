@@ -4,11 +4,15 @@
 
 ## Usage
 
-### Setup:
+First, install the wrap file:
 
-```sh
+    meson wrap install argu-parser
 
-meson wrap install argu-parser
+Then add the following line to your project's `meson.build`:
+
+```meson
+
+argu_parser_dep = subproject('argu-parser').get_variable('argu_parser_dep')
 
 ```
 
